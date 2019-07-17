@@ -1,0 +1,12 @@
+catalogo
+areautente
+recensione
+recensionearraymodel
+recensionemodel
+selprodcontr
+recenscontrol
+lastproducts
+modelproductbuy
+productmodeldm
+productbean
+productbuy
