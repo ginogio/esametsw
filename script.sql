@@ -31,11 +31,13 @@ DROP TABLE IF EXISTS product;
 
 CREATE TABLE product (	
   code int primary key AUTO_INCREMENT,
-  name char(20) not null,
-  description char(100),
+  name char(25) not null,
+  description char(250),
   tipo char(25) not null,
   price int default 0,
   quantity int default 0,
+  anno int default 0,
+  regione char(25),
   foto mediumblob
 );
 
@@ -59,9 +61,26 @@ CREATE TABLE carrello (
   tipo char(25) not null,
   price int default 0,
   quantity int default 0,
+  anno int default 0,
+  regione char(25),
   foto mediumblob,
   foreign key(id_utente)references UTENTE(code),
   foreign key(id_product)references PRODUCT(code)
   );
+  
+  DROP TABLE IF EXISTS recensioni;
+  
+  CREATE TABLE recensioni(
+  code int primary key AUTO_INCREMENT,
+  id_utente int,
+  id_product int,
+  nomeut char(25),
+  titolo char(20) not null,
+  description char(250),
+  stelle int default 0,
+  foreign key(id_utente)references UTENTE(code),
+  foreign key(id_product)references PRODUCT(code)
+  );
+  
 
 
