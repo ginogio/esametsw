@@ -1,4 +1,3 @@
-home.jsp
-lastproducts
-getinfovino
+prodosel
+ProductControl
 catalogo
