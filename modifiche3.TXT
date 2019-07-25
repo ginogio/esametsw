@@ -3,3 +3,10 @@ registrazione
 javascript.js
 productcontrol
 cambiamail
+areautente.jsp
+areautente.css
+jquerty-artarax.css e .js
+foto/img-stars
+home.jsp
+prodosel.jsp e css
+chisiamo.jsp
