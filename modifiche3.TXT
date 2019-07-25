@@ -1,2 +1,5 @@
-web.xml
-regcontrol
+areaadmin
+registrazione
+javascript.js
+productcontrol
+cambiamail
